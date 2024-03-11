@@ -30,7 +30,7 @@ Start typing `new` in the chat and choose the `new workspace` option. Ask Copilo
 
 <img src="./images/new_workspace.png" alt="GitHub Copilot New Workspace Command" width="250"/>
 
-<img src="./images/workspace_name.png" alt="GitHub Copilot New Workspace Command" width="250"/>
+<img src="./images/workspace_name.png" alt="GitHub Copilot New Workspace Command" width="600"/>
 
 
 
