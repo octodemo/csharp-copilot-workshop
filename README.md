@@ -26,9 +26,13 @@ GitHub Copilot chat includes built-in commands (hotkeys) for common tasks. You c
 ## Creating a New Workspace
 
 ### Create a New Workspace
-Start typing `new` in the chat and choose the `new workspace` option. Ask Copilot to `scaffold a new C# project`. Copilot will create a new workspace and present you with a convenient button to create the workspace for you. Click this button and wait for the Codespace to reload. (see image below)
+Start typing `new` in the chat and choose the `new workspace` option. Ask Copilot to `scaffold a new C# project`. Copilot will create a new workspace and present you with a convenient button to create the workspace for you. Click this button, name the workspace `my-csharp-project` and wait for the Codespace to reload. (see image below)
 
 <img src="./images/new_workspace.png" alt="GitHub Copilot New Workspace Command" width="250"/>
+
+<img src="./images/workspace_name.png" alt="GitHub Copilot New Workspace Command" width="250"/>
+
+
 
 ### Explore the New Project
 Once the Codespace has reloaded, familiarize yourself with the contents of the new project and its directories.
