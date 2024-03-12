@@ -4,17 +4,19 @@ Welcome to this interactive workshop where we will use GitHub Copilot to create 
 
 ## Getting Started
 
-### Launch Codespace
-Start by launching your Codespace environment.
+### Launch IDE 
+Start by launching your Codespace environment or IDE of your choice in which GitHub Copilot is supported (Visual Studio, VS Code, GitHub Codespaes, Neovim and JetBrains). **Note:** This workshop relies heavily on Copilot Chat which may not be available in all IDEs -- however, user's can still follow along and prompt Copilot inline rather than using chat. 
 
 ### Familiarize Yourself with the Project Directory
 Take a moment to explore the project directory. (Surprise! It's empty)
 
 ### Install Copilot Extension
-Navigate to the extensions tab on the left hand side of the codespace. Search 'copilot' and install the GitHub Copilot extension. Note that this will also install the chat feature. 
+Navigate to the extensions tab on the left hand side of the codespace. Search 'copilot' and install the GitHub Copilot extension. Note that this will also install the chat feature. If using a different IDE, navigate to the marketplace and search for `copilot`. 
 
 <img src="./images/copilot_extension.png" alt="GitHub Copilot Extension" width="250"/>
 
+#### Authenticate to the GitHub Copilot Service
+Depending on which IDE you are using, you will be prompted to login with your GitHub credentials. 
 
 
 ### Open Copilot Chat
