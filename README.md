@@ -1,6 +1,6 @@
 # C# Project Workshop with GitHub Copilot
 
-Welcome to this interactive workshop where we will use GitHub Copilot to create a C# project with CRUD operations. This project will allow us to add, update, and delete users.
+Welcome to this interactive workshop where we will use GitHub Copilot to create a C# project with CRUD operations. This project will allow us to add, update, and delete users. We will work through multiple different use-cases of GitHub Copilot. 
 
 ## Getting Started
 
