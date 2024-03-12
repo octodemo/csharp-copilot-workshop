@@ -363,6 +363,7 @@ Enjoy the workshop and happy coding!
 
 ## Intermediate
 
+- Refractor code using GitHub Copilot Chat - highlight the contents of the `UserService.cs` file and ask Copilot Chat `refractor this code snippet` - notice the output suggested by Copilot. 
 - Modify the methods in UserService.cs to update a user's name or email address (updateEmail or updateName) 
 - Modify the GetUser method to support pagination
 - Create a method to assign roles to a user
