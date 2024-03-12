@@ -51,7 +51,7 @@ Navigate to the `/src/Classes` directory and create a new file called `User.cs`.
 ```csharp
 // setup a class called User with 3 properties: Id, Name, and Email
 // The properties are defined using the get and set accessors.
-// Use the appropriate namespace for the project (my_csharp_project.Classes).
+// Use the appropriate namespace for the project (MyCSharpProject.Classes).
 // The set accessor assigns a new value to the property, and the get accessor returns the property value.
 ```
 
@@ -60,7 +60,7 @@ The contents returned should be something along the lines of:
 ```csharp
 using System;
 
-namespace my_csharp_project.Classes
+namespace MyCSharpProject.Classes
 { 
     public class User
     {
@@ -80,7 +80,7 @@ Navigate to the `/src/Classes` directory and create a new file called `UserServi
 In the chat interface, prompt copilot to 
 
 ```csharp 
-// We are creating a simple C# console application that performs basic CRUD operations on a list of users. Create a UserService class in the my_csharp_project.Classes namespace that manages a list of User objects. The User class has properties Id, Name, and Email. The UserService class should have methods to add a user, get a user by id, update a user's details, and delete a user by id.
+// We are creating a simple C# console application that performs basic CRUD operations on a list of users. Create a UserService class in the MyCSharpProject.Classes namespace that manages a list of User objects. The User class has properties Id, Name, and Email. The UserService class should have methods to add a user, get a user by id, update a user's details, and delete a user by id.
 ```
 
 
@@ -89,7 +89,7 @@ The response should contain code similar to the following solution below:
 ```csharp
 using System.Collections.Generic;
 using System.Linq;
-namespace my_csharp_project.Classes{ 
+namespace MyCSharpProject.Classes{ 
 public class UserService
 {
     private List<User> users = new List<User>();
@@ -140,7 +140,7 @@ The response should contain code similar to the following solution below:
 
 ```csharp 
 using System;
-using my_csharp_project.Classes;
+using MyCSharpProject.Classes;
 
 public class Program
 {
