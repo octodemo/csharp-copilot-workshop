@@ -5,7 +5,7 @@ Welcome to this interactive workshop where we will use GitHub Copilot to create 
 ## Getting Started
 
 ### Launch IDE 
-Start by launching your Codespace environment or IDE of your choice in which GitHub Copilot is supported (Visual Studio, VS Code, GitHub Codespaes, Neovim and JetBrains). **Note:** This workshop relies heavily on Copilot Chat which may not be available in all IDEs -- however, user's can still follow along and prompt Copilot inline rather than using chat. 
+Start by launching your Codespace environment or IDE of your choice in which GitHub Copilot is supported (Visual Studio, VS Code, GitHub Codespaces, Neovim and JetBrains). **Note:** This workshop relies heavily on Copilot Chat which may not be available in all IDEs -- however, you may still follow along and prompt GitHub Copilot inline using comments rather than using chat. 
 
 ### Familiarize Yourself with the Project Directory
 Take a moment to explore the project directory. (Surprise! It's empty)
