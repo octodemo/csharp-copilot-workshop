@@ -190,7 +190,7 @@ Navigate to your `.csproj` file in the `/src` directory - if it doesn't have one
 
 The response should contain code similar to the following solution below: 
 
-```csharp
+```
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
@@ -329,7 +329,7 @@ namespace MyCSharpProject.Tests
 #### Generate .csproj file for tests
 If there's no `.csproj` file in the `tests/MyCSharpProject.Tests` directory, you'll need to create one. Ask Copilot Chat to fill in the contents of this file. Below is a sample output:
 
-```csharp
+```
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
