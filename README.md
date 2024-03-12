@@ -174,6 +174,11 @@ Use Copilot to add additional users in the `Program.cs` file.
 ### Review the Code
 Another use case for GitHub Copilot chat is code review. For an extra set of eyes, you may highlight the contents of each of the three files and ask Copilot to review them for syntax errors or any other issues.
 
+Alternatively, you may use the built-in `/workspace` command and ask Copilot chat to check the contents of specific files for errors (see image below):
+
+<img src="./images/workspace_check.png" alt="GitHub Copilot Insert" width="250"/>
+
+
 ### Generate the .csproj File
 Navigate to your `.csproj` file in the `/src` directory, highlight any contents, and ask Copilot to generate the contents for the `.csproj` file. Ask Copilot to use .NET version 7 and to include the appropriate `ItemGroup` elements.
 
