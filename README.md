@@ -179,7 +179,7 @@ Alternatively, you may use the built-in `/workspace` command and ask Copilot cha
 <img src="./images/workspace_check.png" alt="GitHub Copilot Insert" width="250"/>
 
 #### Document existing code
-Copilot Chat can be leverage to document existing codebases. Highlight the contents of the UserService.cs file (or any file of your choice) and ask Copilot Chat to `modify this file in order to include documentation in the form of inline comments`. Review the response and notice how Copilot can aide in documenting existing codebases - making it much easier for developers to understand how to navigate complex and unfamiliar codebases. 
+Copilot Chat can be leverage to document existing codebases. Highlight the contents of the `UserService.cs` file (or any file of your choice) and ask Copilot Chat to `modify this file in order to include documentation in the form of inline comments`. Review the response and notice how Copilot can aide in documenting existing codebases - making it much easier for developers to understand how to navigate complex and unfamiliar codebases. 
 
 ### Generate the .csproj File
 Navigate to your `.csproj` file in the `/src` directory - if it doesn't have one already, create the file and name it based on your project name, ie: `MyCSharpProject.csproj`. Navigate to Copilot Chat to generate the contents for the `.csproj` file. Ask Copilot to use .NET version 7 and to include the appropriate `ItemGroup` elements.
