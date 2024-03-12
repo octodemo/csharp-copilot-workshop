@@ -46,7 +46,7 @@ We will use Copilot in the IDE to create a `User` class with `ID`, `Name`, and `
 
 We will use Copilot in the IDE to create a `User` class with `ID`, `Name`, and `Email` properties, along with their respective `get` and `set` methods.
 
-Navigate to the `/src/classes` directory and create a new file called `User.cs`. At the top, we will write a comment to prompt GitHub Copilot:
+Navigate to the `/src/Classes` directory and create a new file called `User.cs`. At the top, we will write a comment to prompt GitHub Copilot:
 
 ```csharp
 // setup a class called User with 3 properties: Id, Name, and Email
@@ -76,7 +76,7 @@ Alternatively, you may begin typing into the file the solution above, and see wh
 ### Create a User Service
 We will ask **Copilot chat** to create the `UserService`. This service will handle the CRUD operations for our `User` objects.
 
-Navigate to the `/src/classes` directory and create a new file called `UserService.cs`. We will use GitHub Copilot chat to generate the contents of this service file. 
+Navigate to the `/src/Classes` directory and create a new file called `UserService.cs`. We will use GitHub Copilot chat to generate the contents of this service file. 
 In the chat interface, prompt copilot to 
 
 ```csharp 
@@ -180,7 +180,7 @@ Alternatively, you may use the built-in `/workspace` command and ask Copilot cha
 
 
 ### Generate the .csproj File
-Navigate to your `.csproj` file in the `/src` directory, highlight any contents, and ask Copilot to generate the contents for the `.csproj` file. Ask Copilot to use .NET version 7 and to include the appropriate `ItemGroup` elements.
+Navigate to your `.csproj` file in the `/src` directory - if it doesn't have one already, create the file and name it based on your project name, ie: `MyCSharpProject.csproj`. Navigate to Copilot Chat to generate the contents for the `.csproj` file. Ask Copilot to use .NET version 7 and to include the appropriate `ItemGroup` elements.
 
 ```csharp 
 // Create a .NET project file that targets .NET 7.0, outputs an executable, and includes Program.cs and all C# files in the Classes directory
