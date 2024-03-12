@@ -48,7 +48,9 @@ We will use Copilot in the IDE to create a `User` class with `ID`, `Name`, and `
 
 We will use Copilot in the IDE to create a `User` class with `ID`, `Name`, and `Email` properties, along with their respective `get` and `set` methods.
 
-Navigate to the `/src/Classes` directory and create a new file called `User.cs`. At the top, we will write a comment to prompt GitHub Copilot:
+Navigate to the `/src/Classes` directory and create a new file called `User.cs` (**note** If there is no /src/Classes directory, create one). 
+
+At the top, we will write a comment to prompt GitHub Copilot:
 
 ```csharp
 // setup a class called User with 3 properties: Id, Name, and Email
