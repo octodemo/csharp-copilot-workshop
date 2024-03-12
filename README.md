@@ -218,6 +218,138 @@ Use `dotnet run` to run the application.
 ### Generate Tests
 Use Copilot to generate tests for your application. Test files are located in the `/tests` directory.
 
+Create a test file and name it `UserServiceTests.cs` - this should be created in the `/tests/MyCSharpProject.Tests` directory. Ask Copilot Chat to `generate unit tests for the addUser, getUserById, deleteUser and updateUser methods in the UserService.cs file` - you'll want to review the output and modify accordingly to ensure the appropriate function names are being used. 
+
+Alternatively, you may generate the unit tests one method at a time, using inline comments to prompt Copilot. Begin typing the following and press enter to see Copilots suggestions. Sometimes, you will need to hit enter twice (to have a new line) in order to generate suggestions for the next block of code. 
+
+```csharp
+//create a test method for the add user method in the UserService.cs file
+```
+
+Review the response provided by Copilot, accept the suggestions and edit as necessary.
+
+Once the first test is created, you'll notice that if you have a new line between the previous chunk of code, Copilot should begin to prompt for additional tests (see image below):
+
+<img src="./images/copilot_autofill_suggestion.png" alt="GitHub Copilot Insert" width="600"/>
+
+Run through and create a few different tests. Below is a sample output -- keep in mind your solution will look a bit different.
+
+```csharp
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MyCSharpProject.Classes;
+
+
+namespace MyCSharpProject.Tests
+{
+    [TestClass]
+    public class UserServiceTests
+    {
+        //create a test method for the add user method in the UserService.cs file
+        [TestMethod]
+        public void TestAddUser()
+        {
+            // Arrange
+            int id = 1;
+            string name = "Test User";
+            string email = "testuser@example.com";
+
+            // Act
+            User user = new User { Id = id, Name = name, Email = email };
+
+
+            // Assert
+            Assert.AreEqual(id, user.Id);
+            Assert.AreEqual(name, user.Name);
+            Assert.AreEqual(email, user.Email);
+
+
+        }
+
+
+        //create a test method for the get user by id method in the UserService.cs file
+        [TestMethod]
+        public void TestGetUserById()
+        {
+            // Arrange
+            UserService userService = new UserService();
+            User user = new User { Id = 1, Name = "Test User", Email = "testemail@example.com" };
+            userService.AddUser(user);
+
+            // Act
+            User retrievedUser = userService.GetUserById(1);
+
+            // Assert
+            Assert.AreEqual(user.Id, retrievedUser.Id);
+            Assert.AreEqual(user.Name, retrievedUser.Name);
+            Assert.AreEqual(user.Email, retrievedUser.Email);
+        }
+
+        //create a test method for the update user method in the UserService.cs file
+        [TestMethod]
+        public void TestUpdateUser()
+        {
+            // Arrange
+            UserService userService = new UserService();
+            User user = new User { Id = 1, Name = "Test User", Email = "testuser@example.com" };
+            userService.AddUser(user);
+            User updatedUser = new User { Id = 1, Name = "Test User", Email = "newemail@example.com" };
+
+            // Act
+            userService.UpdateUser(updatedUser);
+            User retrievedUser = userService.GetUserById(1);
+
+            // Assert
+            Assert.AreEqual(updatedUser.Email, retrievedUser.Email);
+        }
+
+        //create a test method for the delete user method in the UserService.cs file
+        [TestMethod]
+        public void TestDeleteUser()
+        {
+            // Arrange
+            UserService userService = new UserService();
+            User user = new User { Id = 1, Name = "Test User", Email = "testuser@example.com" };
+            userService.AddUser(user);
+
+            // Act
+            userService.DeleteUser(1);
+
+            // Assert
+            Assert.ThrowsException<Exception>(() => userService.GetUserById(1));
+
+
+}
+    }
+}
+```
+
+#### Generate .csproj file for tests
+If there's no `.csproj` file in the `tests/MyCSharpProject.Tests` directory, you'll need to create one. Ask Copilot Chat to fill in the contents of this file. Below is a sample output:
+
+```csharp
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+        <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
+        <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\MyCSharpProject.csproj" />
+    </ItemGroup>
+
+</Project>
+```
+
+#### Run tests
+Ensure you are in the `/tests/MyCSharpProject.Tests` directory. Open up terminal and navigate to `/tests/MyCSharpProject.Tests` and run the command `dotnet test`. 
+
 ### Debugging
 If you run into errors, you can use Copilot chat to assist you. Consider using the built-in `/fix` command.
 
@@ -229,14 +361,14 @@ Enjoy the workshop and happy coding!
 
 ## Intermediate
 
+- Modify the methods in UserService.cs to update a user's name or email address (updateEmail or updateName) 
+- Modify the GetUser method to support pagination
 - Create a method to assign roles to a user
 - Create a method to search for users by name
-- Modify the GetUser method to support pagination
 - Create a method to log events in the application
 - Create an API controller for the User class
 - Create unit tests for the UpdateUser method
 - Create unit tests for the getUser method
 - Create unit tests for the addUser method
+- Modify code to handle errors/exceptions  
 
-## Advanced 
-- Modify the AddUser method to store user data in a database 
